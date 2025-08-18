@@ -1,2 +1,5 @@
 .idea
+node_modules
+
+## for LLM contexts
 llm-contexts
