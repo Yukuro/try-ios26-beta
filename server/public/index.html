@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Credentials API テスト - iPadOS26</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Digital Credentials API テスト</h1>
+            <p>iPadOS26の新機能をテストするためのWebサイトです</p>
+        </header>
+
+        <main>
+            <section class="info-section">
+                <h2>Digital Credentials APIについて</h2>
+                <p>Digital Credentials APIは、W3Cによって策定されたAPIで、WebサイトがApple WalletやiOSアプリから安全にデジタル身分証明書（運転免許証など）をリクエストできます。</p>
+                <p>このAPIは、オンラインサービスへのアクセスに高信頼性の認証情報が必要な場合（例：レンタカーの利用）に有用です。</p>
+            </section>
+
+            <section class="test-section">
+                <h2>身元確認テスト</h2>
+                <p>下のボタンをクリックして、Digital Credentials APIを使った身元確認をテストしてください。</p>
+
+                <div class="button-group">
+                    <button id="verifyIdentityBtn" class="primary-btn">身元確認 (OpenID4VP)</button>
+                    <button id="requestOrgIsoMdocBtn" class="primary-btn">身元確認 (org-iso-mdoc)</button>
+                </div>
+
+                <div id="status" class="status-display">
+                    <p>ステータス: 待機中</p>
+                </div>
+
+                <div id="result" class="result-display" style="display: none;">
+                    <h3>結果:</h3>
+                    <pre id="resultContent"></pre>
+                </div>
+            </section>
+
+            <section class="api-info">
+                <h2>技術仕様</h2>
+                <ul>
+                    <li>プロトコル: org-iso-mdoc (ISO/IEC 18013-7 Annex C)</li>
+                    <li>API: W3C Digital Credentials API</li>
+                    <li>対応プラットフォーム: iPadOS26以降</li>
+                    <li>対応ブラウザ: Safari (WebKit)</li>
+                </ul>
+            </section>
+
+            <section class="browser-support">
+                <h2>ブラウザサポート状況</h2>
+                <div id="browserSupport" class="support-status">
+                    <p>チェック中...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Digital Credentials API テストサイト</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
