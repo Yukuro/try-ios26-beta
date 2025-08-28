@@ -1,0 +1,30 @@
+{
+  "name": "oid4vci-demo",
+  "version": "1.0.0",
+  "description": "OpenID4VCI Demo Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "jose": "^5.1.3",
+    "qrcode": "^1.5.4",
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "keywords": [
+    "openid4vci",
+    "verifiable-credentials",
+    "oid4vc",
+    "jwt",
+    "did"
+  ],
+  "author": "",
+  "license": "MIT"
+}
