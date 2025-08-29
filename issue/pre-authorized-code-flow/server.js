@@ -74,7 +74,7 @@ app.get('/.well-known/openid-credential-issuer', (req, res) => {
                         description: "JFF Plugfest 3 OpenBadge (JWT)",
                         text_color: "#FFFFFF",
                         background_image: {
-                            url: "https://avatars.githubusercontent.com/u/15343476",
+                            url: "https://raw.githubusercontent.com/Yukuro/try-ios26-beta/refs/heads/main/presentations/same-device-flow/public/Gemini_Generated_Image_se0up7se0up7se0u.png",
                         },
                         logo: {
                             url: "https://w3c-ccg.github.io/vc-ed/plugfest-1-2022/images/JFF_LogoLockup.png",
