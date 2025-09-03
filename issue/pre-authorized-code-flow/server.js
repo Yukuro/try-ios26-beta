@@ -59,8 +59,8 @@ app.get('/.well-known/openid-credential-issuer', (req, res) => {
         token_endpoint: `${baseUrl}/token`,
         display: [
             {
-                name: "Sphereon",
-                description: "Sphereon JFF Plugfest3 Issuer"
+                name: "SB x LY ID Event Committee",
+                description: "SB x LY ID Event Committee"
             }
         ],
         credentials_supported: [
@@ -70,26 +70,26 @@ app.get('/.well-known/openid-credential-issuer', (req, res) => {
                 types: ["VerifiableCredential", "OpenBadgeCredential"],
                 display: [
                     {
-                        name: "Example University Degree",
-                        description: "JFF Plugfest 3 OpenBadge (JWT)",
+                        name: "SB & LY ID Workshop Badge",
+                        description: "SB x LY OpenBadge",
                         text_color: "#FFFFFF",
                         background_image: {
-                            url: "https://raw.githubusercontent.com/Yukuro/try-ios26-beta/refs/heads/main/presentations/same-device-flow/public/Gemini_Generated_Image_se0up7se0up7se0u.png",
+                            url: "https://raw.githubusercontent.com/Yukuro/try-ios26-beta/refs/heads/main/issue/pre-authorized-code-flow/public/Gemini_Generated_Image_se0up7se0up7se0u.png",
                         },
                         logo: {
-                            url: "https://w3c-ccg.github.io/vc-ed/plugfest-1-2022/images/JFF_LogoLockup.png",
-                            alt_text: "Red, magenta and yellow vertical lines with 3 black dots and the text JFF, depicting the Jobs For the Future logo."
+                            url: "https://raw.githubusercontent.com/Yukuro/try-ios26-beta/refs/heads/main/issue/pre-authorized-code-flow/public/Gemini_Generated_Image_ewsxcmewsxcmewsx.png",
+                            alt_text: "SB x LY ID Event Committee"
                         }
                     },
                     {
                         locale: "en-US",
-                        name: "Example University Degree",
-                        description: "JFF Plugfest 3 OpenBadge (JWT)",
+                        name: "SB & LY ID Workshop Badge",
+                        description: "SB x LY OpenBadge",
                         text_color: "#FFFFFF",
                         background_color: "#1763c1",
                         logo: {
-                            url: "https://w3c-ccg.github.io/vc-ed/plugfest-1-2022/images/JFF_LogoLockup.png",
-                            alt_text: "Red, magenta and yellow vertical lines with 3 black dots and the text JFF, depicting the Jobs For the Future logo."
+                            url: "https://raw.githubusercontent.com/Yukuro/try-ios26-beta/refs/heads/main/issue/pre-authorized-code-flow/public/Gemini_Generated_Image_ewsxcmewsxcmewsx.png",
+                            alt_text: "SB x LY ID Event Committee"
                         }
                     }
                 ],
@@ -265,9 +265,9 @@ app.post('/credentials', async (req, res) => {
             "issuer": {
                 "type": ["Profile"],
                 "id": didJwk,
-                "name": "Jobs for the Future (JFF)",
-                "url": "https://www.jff.org/",
-                "image": "https://w3c-ccg.github.io/vc-ed/plugfest-1-2022/images/JFF_LogoLockup.png"
+                "name": "SB x LY ID Event Committee",
+                "url": "https://github.com/Yukuro",
+                "image": "https://raw.githubusercontent.com/Yukuro/try-ios26-beta/refs/heads/main/issue/pre-authorized-code-flow/public/Gemini_Generated_Image_ewsxcmewsxcmewsx.png"
             },
             "issuanceDate": issuanceDate,
             "expirationDate": expirationDate,
