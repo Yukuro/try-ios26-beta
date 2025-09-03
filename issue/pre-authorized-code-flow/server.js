@@ -10,8 +10,8 @@ const app = express();
 const PORT = process.env.PORT || 8888;
 
 // ドメイン名をコマンドライン引数から取得
-const domain = process.argv[2] || 'localhost:8888';
-const baseUrl = domain.includes('localhost') ? `http://${domain}` : `https://${domain}`;
+const DOMAIN = process.env.DOMAIN || 'localhost:8888';
+const baseUrl = DOMAIN.includes('localhost') ? `http://${DOMAIN}` : `https://${DOMAIN}`;
 
 // ミドルウェア
 app.use(express.json());
